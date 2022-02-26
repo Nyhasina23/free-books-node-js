@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/assets/css/bootstrap/bootstrap.min.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="container mt-3">
+        <h1>Admin dashboard</h1>
+        <a href="/users/add" class="btn btn-primary">New User + </a>
+        <table class="table table-striped">
+            <thead>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Age</th>
+            </thead>
+
+            <tbody>
+                <% for (user of users ) { %>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.firstname %></td>
+                    <td><%= user.age %><a href="/users/edit/<%= user.id %>" class="btn btn-success ms-5">edit</a><a href="/users/<%= user.id %>" class="btn btn-danger ms-2">delete</a></td>
+                </tr>
+                <% } %>
+            </tbody>
+
+        </table>
+    </div>
+    
+</body>
+</html>
