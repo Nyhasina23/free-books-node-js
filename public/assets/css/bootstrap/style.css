@@ -139,6 +139,7 @@ body{
     padding: 60px 40px;
     text-align: center;
     overflow: hidden;
+    max-height: 300px;
 
 }
 .category .card .layer {
@@ -166,7 +167,7 @@ body{
    font-weight: initial;
 }
 .imgBox img{
-    width: 50px;
+    width: 100px;
 }
 .category .card .content .details h2 {
     color:#DBD9DA;
@@ -181,4 +182,11 @@ body{
 }
 :root {
     --swiper-theme-color: #1BBC9B;
+}
+.logo-img{
+    width: 20px;
+    padding: 5px;
+    display: flex;
+align-items: center;
+justify-content: center;
 }
