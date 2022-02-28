@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="../../../../../public/assets/css/bootstrap/swiper.css" />
+  <link rel="stylesheet" href="../../../../../public/assets/css/bootstrap/style.css" />
+</head>
+<style>
+
+</style>
+
+<body>
+
+  <!-- logo -->
+  <div class="top">
+    <div class="logo-container">
+      <img class="logo_img" src="../../../../../public/assets/images/$logo_book.png" alt="logo free-books" />
+      <h4>
+        Books.
+      </h4>
+      <span>free</span>
+    </div>
+  </div>
+  <!-- end logo -->
+  <div class="container">
+
+    <!-- Dashboard -->
+    <div class="left-container">
+      <h3 class="dashboard-title">Dashboard</h3>
+      <br>
+      <h3 class="left-container-title">
+        Liste des livres
+        <p class="title1">23</p>
+      </h3>
+      <h3 class="left-container-title">
+        Livres téléchargés
+        <p class="title2">12</p>
+      </h3>
+      <h3 class="left-container-title">
+        Articles
+        <p class="title3">7</p>
+      </h3>
+      <h3 class="left-container-title">
+        Utilisateurs
+        <p class="title4">14</p>
+        <br>
+      </h3>
+    </div>
+    <!-- end Dashboard -->
+
+    <!-- right section  -->
+    <div class="right-container">
+      <div class="right-content">
+        <h1>Bienvenue, <br> sur le plateforme <br> de livre gratuit</h1>
+        <p>Télécharger votre livre gratuitement <br> n'importe où</p>
+        <br>
+        <a href="#" class="primary-button">Voir tous les livres</a>
+      </div>
+      <div class="right-content-image">
+        <img src="../../../../../public/assets/images/book.png" alt="" class="right-img" />
+      </div>
+    </div>
+    <!-- end right section  -->
+
+  
+
+  <!-- category section  -->
+  <div class="category">
+   <h1>Catégories</h1>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Assumenda commodi repellat provident iusto officiis vel <br>
+                </p>
+                <div class="imgBox">
+                  <img src="../../../../../public/assets/images/1.jpg" />
+                </div>
+                <div class="details">
+                  <h2>Categorie Title <br> <span>Categorie description</span> </h2>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Assumenda commodi repellat provident iusto officiis vel <br>
+                </p>
+                <div class="imgBox">
+                  <img src="../../../../../public/assets/images/2.jpg" />
+                </div>
+                <div class="details">
+                  <h2>Categorie Title <br> <span>Categorie description</span> </h2>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="layer"></div>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Assumenda commodi repellat provident iusto officiis vel <br>
+                </p>
+                <div class="imgBox">
+                  <img src="../../../../../public/assets/images/3.jpg" />
+                </div>
+                <div class="details">
+                  <h2>Categorie Title <br> <span>Categorie description</span> </h2>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- end categorie section  -->
+</div>
+  <div class="para" style="margin-top: 12rem;">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  <br>
+       Ea optio ipsa, quos mollitia omnis fuga amet expedita ad  <br>
+       aliquam reiciendis ipsum accusamus qui corporis, officiis <br>
+        veniam quae eos libero voluptate natus consectetur iusto! <br>
+         Velit officiis, magni laudantium neque voluptas, dignissimos,  <br>
+         dolorem commodi tempora vero accusamus assumenda. Iusto ad ut atque.</p>
+  </div>
+  <script src="../../../../../public/assets/css/bootstrap/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>

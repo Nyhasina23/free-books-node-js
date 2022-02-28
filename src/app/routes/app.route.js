@@ -5,6 +5,11 @@ var router = express.Router();
 
 async function AdminRouter() {
 
+  router.get('/book' , ( req ,res ) => {
+    res.render('../src/app/views/pages/book/homeBook.ejs')
+  })
+
+
   /**
    * @description get users
    * @method GET /
