@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 async function load(){
     try{
         let db = await mongoose.connect(
-            "mongodb://localhost:27017/User" , 
+            "mongodb://localhost:27017/Book" , 
             {
                 useNewUrlParser : true ,
                 useUnifiedTopology : true,

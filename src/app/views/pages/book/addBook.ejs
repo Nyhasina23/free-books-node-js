@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../public/assets/css/bootstrap/bootstrap.min.css" />
+
+    <title>Add book</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Adding books</h1>
+        <form action="/add-book" method="POST" enctype="multipart/form-data" class="mb-3">
+            <label for="title">Titre</label>
+            <input type="text" name="title" id="title" class="form-control">
+            <label for="desc">Description</label>
+            <input type="text" name="desc" id="desc" class="form-control">
+            <label for="year">Année</label>
+            <input type="date" name="year" id="year" class="form-control">
+            <label for="img">Image</label>
+            <input type="file" name="img" id="img" class="form-control" accept="image/*">
+            <input type="submit" value="Ajouter" class="btn btn-primary mt-3" />
+        </form>
+    </div>
+</body>
+
+</html>

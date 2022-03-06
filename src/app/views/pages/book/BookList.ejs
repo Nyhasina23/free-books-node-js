@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../../../public/assets/css/bootstrap/style.css"
+    />
+    <title>Book List</title>
+  </head>
+  <body>
+      <!-- List book items  -->
+
+      <div class="book-container">
+    <h1>Liste des Livres</h1>
+    <div class="book-list">
+      <% for (bookItem of BookItems) { %>
+      <div class="book-item-list">
+        <img
+          class="book-image"
+          src="data:image/<%=bookItem.image.contentType%>;base64,
+      <%=bookItem.image.data.toString('base64')%>"
+        />
+        <h1 class="book-title"><%= bookItem.title %></h1>
+        <h3 class="book-desc">Description</h3>
+        <p class="book-desc-para"><%= bookItem.desc %></p>
+    </div>
+      <% } %>
+    </div>
+
+    <!-- end List book items  -->
+</div>
+  </body>
+</html>

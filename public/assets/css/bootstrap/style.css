@@ -190,3 +190,53 @@ body{
 align-items: center;
 justify-content: center;
 }
+.book-image{
+    width: 240px;
+}
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}   
+.book-item-list{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.book-title{
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.book-desc{
+    margin-top: -10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align-last: left;
+}
+.book-desc-para{
+    margin-top: -10px;
+    font-weight: normal;
+    text-align-last: left;
+}
+.book-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.para{
+    display: flex;
+}
+.left-para{
+    flex: 4;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width: 900px;
+}
+.right-para{
+    flex: 2;
+
+}
